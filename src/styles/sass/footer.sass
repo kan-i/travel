@@ -1,0 +1,66 @@
+@import vars
+.footer
+    position: relative
+    padding-top: 45px
+    padding-bottom: 45px
+    margin-top: $mtsection
+    background: rgba(255, 255, 255, 0.37)
+    &_bg
+        position: absolute
+        width: 100%
+        bottom: 0
+        left: 0
+        right: 0
+        z-index: -3
+        height: 1066px
+        background-image: url(/img/italia.png)
+        background-size: cover
+        background-position: center center
+    &-socials, &-contacts
+        &-item
+            display: flex
+            align-items: center
+            &_img
+                width: 26px
+                height: 26px
+                margin-right: 11px
+            &_name
+                line-height: 100%
+            &:not(:last-child)
+                margin-bottom: 18px
+                
+
+.copyright
+    font-size: 16px
+    margin-top: 5px
+
+@media ( max-width: 768px )
+    .footer
+        &_bg
+            background-image: url(/img/italia_tablet.png)
+            height: 1429px
+
+
+@media ( max-width: 414px )
+    .footer
+        margin-top: 100px
+        padding-top: 21px
+        padding-bottom: 21px
+        &-wrap
+            flex-wrap: wrap
+        &-logo
+            order: 2
+        &-socials
+            display: flex
+            order: 1
+            &-item
+                &:not(:last-child)
+                    margin-bottom: 0
+                &_name
+                    display: none
+        &-contacts
+            margin-bottom: 18px
+            order: 0
+            &-item
+                &:not(:last-child)
+                    margin-bottom: 9px

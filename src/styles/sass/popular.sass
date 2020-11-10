@@ -1,0 +1,76 @@
+@import vars
+.popular
+    margin-top: $mtsection
+    &_descr
+        max-width: 616px
+        margin-bottom: 60px
+    &-cards
+        flex-wrap: wrap
+    &-card
+        position: relative
+        width: 370px
+        height: 370px
+        border-radius: 15px
+        margin-bottom: $mb
+        overflow: hidden
+        &_img
+            border-radius: 15px
+            position: absolute
+            left: 0
+            top: 0
+            z-index: -2
+        &_title
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            transition: all 300ms ease-in-out
+
+            color: #ffffff
+            font-size: 20px
+            font-weight: bold
+        &-wrapper
+            position: absolute
+            bottom: 0
+            left: 50%
+            transform: translate(-50%, 47px)
+            text-align: center
+            transition: all 300ms ease-in-out
+            &_btn
+                opacity: 0
+
+        &::before
+            content: ''
+            width: 100%
+            height: 100%
+            border-radius: 15px
+            background: linear-gradient(180deg, rgba(255, 253, 253, 0) 1.81%, #AD764A 100%)
+            position: absolute
+            left: 0
+            top: 0
+            z-index: -1
+            opacity: 0
+            transition: opacity .2s ease
+        &:hover
+            &::before
+                opacity: 1
+            .popular-card-wrapper_btn
+                opacity: 1
+            .popular-card-wrapper
+                transform: translate(-50%, -47px)
+
+        
+@media ( max-width: 768px )
+    .popular
+        &-card
+            width: 333px
+            height: 333px
+
+@media ( max-width: 414px )
+    .popular
+        margin-top: 100px
+        &-card
+            height: 160px
+            &:hover
+                .popular-card_title
+                    transform: translate(-50%, -170px)

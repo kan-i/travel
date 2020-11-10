@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Travel</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-wrap dflex">
+                <div class="logo"><span class="logo--gold">tra</span>vel</div>
+                <nav class="nav"><a href="#" class="nav_link">Главная</a> <a href="#" class="nav_link">О компании</a> <a
+                        href="#" class="nav_link">Туры</a> <a href="#" class="nav_link">Отзывы о нас</a> <a href="#"
+                        class="nav_link">Контакты</a></nav>
+                <div class="menu-btn" id="menu-btn"><span></span> <span></span> <span></span></div>
+            </div>
+        </div>
+        <div class="menu">
+            <nav class="menu-nav"><a href="#" class="menu-nav_link">Главная</a> <a href="#" class="menu-nav_link">О
+                    компании</a> <a href="#" class="menu-nav_link">Туры</a> <a href="#" class="menu-nav_link">Отзывы о
+                    нас</a> <a href="#" class="menu-nav_link">Контакты</a></nav>
+        </div>
+    </header>
+    <div class="load">
+        <img src="img/spinner.gif" alt="spinner">
+    </div>
+    <div class="navbar">
+        <div class="container">
+            <a href="https://newmywebsite.ru/#portfolio">Вернуться в портфолио</a>
+        </div>
+    </div>
+    <div class="modal animate__animated animate__fadeIn">
+        <button class="modal_btn btn-close-modal animate__animated animate__fadeInRight">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M29.1742 25.1991L18.975 15L29.1742 4.80086C30.2753 3.69973 30.2753 1.92698 29.1742 0.825849C28.073 -0.275283 26.3003 -0.275283 25.1991 0.825849L15 11.025L4.80086 0.825849C3.69973 -0.275283 1.92698 -0.275283 0.825849 0.825849C-0.275283 1.92698 -0.275283 3.69973 0.825849 4.80086L11.025 15L0.825849 25.1991C-0.275283 26.3003 -0.275283 28.073 0.825849 29.1742C1.92698 30.2753 3.69973 30.2753 4.80086 29.1742L15 18.975L25.1991 29.1742C26.3003 30.2753 28.073 30.2753 29.1742 29.1742C30.2675 28.073 30.2675 26.2925 29.1742 25.1991Z"
+                    fill="#F2F2F2" /></svg></button>
+        <div class="modal-form animate__animated animate__fadeInLeft">
+            <h2 class="title inputs_title modal-form_title"><span class="logo--gold">Вам</span> подобрать тур?</h2>
+            <p class="inputs_descr modal-form_descr">Оператор свяжется с вами в течении 15 минут</p><input type="text"
+                class="input modal-form_input" placeholder="Имя"> <input type="tel" class="input modal-form_input"
+                placeholder="Телефон"> <input type="email" class="input modal-form_input"
+                placeholder="Электронная почта"> <button class="btn inputs_btn btn-close-modal">Отправить</button>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="hero_bg hero_bg--first rellax" data-rellax-speed="-5"></div>
+        <div class="hero_bg hero_bg--second rellax" data-rellax-speed="-5"></div>
+        <div class="hero_bg hero_bg--third rellax" data-rellax-speed="-5"></div>
+        <div class="container">
+            <h1 class="hero_title">Сделаем ваше путешествие незабываемым!</h1>
+            <p class="hero_descr">Широкий выбор туров. Бронируйте сейчас по самой выгодной цене</p><button
+                class="btn hero_btn btn-open-modal">Подробнее</button>
+        </div>
+    </div>
+    <div class="hot-tours">
+        <div class="container hot-tours-wrap">
+            <header class="hot-tours-header">
+                <h2 class="hot-tours_title title"><span class="logo--gold">Горящие</span> туры</h2>
+                <p class="hot-tours_descr">Если у Вас есть возможность выбраться из рутины, то воспользуйтесь ею!</p>
+            </header>
+            <div class="hot-tours-slider-wrapper">
+                <div class="hot-tours-slider slider">
+                    <div class="hot-tours-slider-slide slide">
+                        <picture>
+                            <source srcset="img/индия.jpg" media="(min-width: 414px)">
+                            <img src="img/min/индия.jpg" alt="Индия" class="hot-tours-slider-slide_img">
+                        </picture>
+                        <div class="hot-tours-slider-slide-text">
+                            <h3 class="hot-tours-slider-slide-text_title">Индия</h3><span
+                                class="hot-tours-slider-slide-text_price">от 60 000 руб.</span> <button
+                                class="btn--white btn hot-tours-slider-slide-text_btn btn-open-modal">Перейти</button>
+                        </div>
+                    </div>
+                    <div class="hot-tours-slider-slide slide">
+                        <picture>
+                            <source srcset="img/китай.jpg" media="(min-width: 414px)">
+                            <img src="img/min/китай.jpg" alt="китай" class="hot-tours-slider-slide_img">
+                        </picture>
+                        <div class="hot-tours-slider-slide-text">
+                            <h3 class="hot-tours-slider-slide-text_title">Китай</h3><span
+                                class="hot-tours-slider-slide-text_price">от 50 000 руб.</span> <button
+                                class="btn--white btn hot-tours-slider-slide-text_btn btn-open-modal">Перейти</button>
+                        </div>
+                    </div>
+                    <div class="hot-tours-slider-slide slide">
+                        <picture>
+                            <source srcset="img/греция.jpg" media="(min-width: 414px)">
+                            <img src="img/min/греция.jpg" alt="греция" class="hot-tours-slider-slide_img">
+                        </picture>
+                        <div class="hot-tours-slider-slide-text">
+                            <h3 class="hot-tours-slider-slide-text_title">Греция</h3><span
+                                class="hot-tours-slider-slide-text_price">от 30 000 руб.</span> <button
+                                class="btn--white btn hot-tours-slider-slide-text_btn btn-open-modal">Перейти</button>
+                        </div>
+                    </div>
+                    <div class="hot-tours-slider-slide slide">
+                        <picture>
+                            <source srcset="img/франция.jpg" media="(min-width: 414px)">
+                            <img src="img/min/франция.jpg" alt="франция" class="hot-tours-slider-slide_img">
+                        </picture>
+                        <div class="hot-tours-slider-slide-text">
+                            <h3 class="hot-tours-slider-slide-text_title">Франция</h3><span
+                                class="hot-tours-slider-slide-text_price">от 40 000 руб.</span> <button
+                                class="btn--white btn hot-tours-slider-slide-text_btn btn-open-modal">Перейти</button>
+                        </div>
+                    </div>
+                    <div class="hot-tours-slider-slide slide">
+                        <picture>
+                            <source srcset="img/черногория.jpg" media="(min-width: 414px)">
+                            <img src="img/min/черногория.jpg" alt="черногория" class="hot-tours-slider-slide_img">
+                        </picture>
+                        <div class="hot-tours-slider-slide-text">
+                            <h3 class="hot-tours-slider-slide-text_title">Черногория</h3><span
+                                class="hot-tours-slider-slide-text_price">от 70 000 руб.</span> <button
+                                class="btn--white btn hot-tours-slider-slide-text_btn btn-open-modal">Перейти</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about">
+        <div class="about_bg rellax" data-rellax-speed="5"></div>
+        <div class="container">
+            <div class="dflex about-wrap">
+                <div class="about_img">
+                    <picture>
+                        <source srcset="img/hotel.jpg" media="(min-width: 414px)">
+                        <img src="img/min/hotel.jpg" alt="hotel">
+                    </picture>
+                </div>
+                <div class="about-text">
+                    <h2 class="about-text_title title"><span class="logo--gold">Лучшие</span> курорты</h2>
+                    <p class="about-text_descr about-text_descr--top">Мы предлагаем лучшие курорты и отели в 40 странах
+                        мира, среди которых Австрия, Андорра, Бахрейн, Беларусь, Болгария, Вьетнам, Греция, Грузия,
+                        Доминиканская Республика, Египет, Израиль, Индия, Индонезия, Иордания, Испания, Италия, Катар,
+                        Кения, Кипр, Куба, Маврикий, Мальдивы, Марокко, Мексика, ОАЭ, Россия, Сейшелы, Сингапур,
+                        Таиланд, Танзания, Тунис, Турция, Узбекистан, Хорватия, Черногория, Шри-Ланка.</p>
+                    <p class="about-text_descr">Под брендом Travel работают туроператоры не только в России, но и в
+                        Германии, Украине, Польше, Турции, Белaруси и Грузии. Программы авиаперевозок осуществляются на
+                        чартерной и регулярной основе из всех аэропортов Москвы и более чем из 47 городов Российской
+                        Федерации, 5 городов Украины, 2 городов Белaруси, 10 городов Польши, 2 городов Турции, 10
+                        городов Германии.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sale">
+        <div class="sale_bg rellax" data-rellax-speed="-7"></div>
+        <div class="container">
+            <h2 class="sale_title title"><span class="logo--gold">Специальное</span> предложение</h2>
+            <p class="sale_descr">Travel предлагает туры на любой вкус: пляжные, экскурсионные, комбинированные,
+                горнолыжные, корпоративные, элитные.</p>
+            <div class="sale-slider">
+                <div class="sale-slide active">
+                    <picture>
+                        <source srcset="img/sale_02.jpg" media="(min-width: 414px)">
+                        <img src="img/min/sale_02.jpg" alt="hotel" class="sale-slide_img">
+                    </picture>
+                    <div class="sale-slide-text">
+                        <img src="img/stars.png" alt="stars" class="stars sale-slide-text_stars">
+                        <h3 class="sale-slide-text_title">Турция (Бодрум)</h3>
+                        <h4 class="sale-slide-text_subtitle">Green Beach Resort Hotel</h4><span
+                            class="sale-slide-text_price">48 877 руб.</span> <button
+                            class="btn btn--white sale-slide-text_btn btn-open-modal">Перейти</button>
+                    </div>
+                </div><!-- .sale-slide -->
+                <div class="sale-slide next">
+                    <picture>
+                        <source srcset="img/sale_01.jpg" media="(min-width: 414px)">
+                        <img src="img/min/sale_01.jpg" alt="hotel" class="sale-slide_img">
+                    </picture>
+                    <div class="sale-slide-text"><img src="img/stars.png" alt="stars"
+                            class="stars sale-slide-text_stars">
+                        <h3 class="sale-slide-text_title">Индия (Южный Гоа)</h3>
+                        <h4 class="sale-slide-text_subtitle">The Lalit Golf & Spa Resort Goa</h4><span
+                            class="sale-slide-text_price">78 599 руб.</span> <button
+                            class="btn btn--white sale-slide-text_btn btn-open-modal">Перейти</button>
+                    </div>
+                </div><!-- .sale-slide -->
+                <div class="sale-slide">
+                    <picture>
+                        <source srcset="img/sale_03.jpg" media="(min-width: 414px)">
+                        <img src="img/min/sale_03.jpg" alt="hotel" class="sale-slide_img">
+                    </picture>
+                    <div class="sale-slide-text"><img src="img/stars.png" alt="stars"
+                            class="stars sale-slide-text_stars">
+                        <h3 class="sale-slide-text_title">Россия (Сочи)</h3>
+                        <h4 class="sale-slide-text_subtitle">Отель “Богатырь”</h4><span class="sale-slide-text_price">57
+                            149 руб.</span> <button
+                            class="btn btn--white sale-slide-text_btn btn-open-modal">Перейти</button>
+                    </div>
+                </div><!-- .sale-slide -->
+                <div class="sale-slide">
+                    <picture>
+                        <source srcset="img/sale_05.jpg" media="(min-width: 414px)">
+                        <img src="img/min/sale_05.jpg" alt="hotel" class="sale-slide_img">
+                    </picture>
+                    <div class="sale-slide-text"><img src="img/stars.png" alt="stars"
+                            class="stars sale-slide-text_stars">
+                        <h3 class="sale-slide-text_title">Тунис (Джерба)</h3>
+                        <h4 class="sale-slide-text_subtitle">Venice Beach</h4><span class="sale-slide-text_price">85 575
+                            руб.</span> <button
+                            class="btn btn--white sale-slide-text_btn btn-open-modal">Перейти</button>
+                    </div>
+                </div><!-- .sale-slide -->
+                <div class="sale-slide prev">
+                    <picture>
+                        <source srcset="img/sale_04.jpg" media="(min-width: 414px)">
+                        <img src="img/min/sale_04.jpg" alt="hotel" class="sale-slide_img">
+                    </picture>
+                    <div class="sale-slide-text"><img src="img/stars.png" alt="stars"
+                            class="stars sale-slide-text_stars">
+                        <h3 class="sale-slide-text_title">Кипр (Протарас)</h3>
+                        <h4 class="sale-slide-text_subtitle">Golden Coast Hotel</h4><span
+                            class="sale-slide-text_price">74 849 руб.</span> <button
+                            class="btn btn--white sale-slide-text_btn btn-open-modal">Перейти</button>
+                    </div>
+                </div><!-- .sale-slide -->
+                <div class="sale-slider-arrows"><button class="sale-slider_btn slider-btn slider-btn--prev"><svg
+                            width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 12L1 6.5L6 1" /></svg></button> <button
+                        class="sale-slider_btn slider-btn slider-btn--next"><svg width="7" height="13"
+                            viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L6 6.5L1 12" /></svg></button></div>
+            </div><button class="btn sale_btn btn-open-modal">Смотреть все туры</button>
+        </div>
+    </div>
+    <div class="popular">
+        <div class="container">
+            <h2 class="title popular_title"><span class="logo--gold">Популярные</span> направления</h2>
+            <p class="popular_descr">Самые популярные туристические направления для отдыха. Сезонные акции и специальные
+                предлоджения от отелей-партнеров.</p>
+            <div class="popular-cards dflex">
+                <div class="popular-card">
+                    <picture>
+                        <source srcset="img/popular_card_01.jpg" media="(min-width: 414px)">
+                        <img src="img/min/popular_card_01.jpg" alt="россия" class="popular-card_img">
+                    </picture>
+                    <h3 class="popular-card_title">Россия</h3>
+                    <div class="popular-card-wrapper"><button
+                            class="popular-card-wrapper_btn btn btn--white btn-open-modal">Перейти</button></div>
+                </div><!-- .popular-card -->
+                <div class="popular-card">
+                    <picture>
+                        <source srcset="img/popular_card_02.jpg" media="(min-width: 414px)">
+                        <img src="img/min/popular_card_02.jpg" alt="испания" class="popular-card_img">
+                    </picture>
+                    <h3 class="popular-card_title">Испания</h3>
+                    <div class="popular-card-wrapper"><button
+                            class="popular-card-wrapper_btn btn btn--white btn-open-modal">Перейти</button></div>
+                </div><!-- .popular-card -->
+                <div class="popular-card">
+                    <picture>
+                        <source srcset="img/popular_card_03.jpg" media="(min-width: 414px)">
+                        <img src="img/min/popular_card_03.jpg" alt="тунис" class="popular-card_img">
+                    </picture>
+                    <h3 class="popular-card_title">Тунис</h3>
+                    <div class="popular-card-wrapper"><button
+                            class="popular-card-wrapper_btn btn btn--white btn-open-modal">Перейти</button></div>
+                </div><!-- .popular-card -->
+                <div class="popular-card">
+                    <picture>
+                        <source srcset="img/popular_card_04.jpg" media="(min-width: 414px)">
+                        <img src="img/min/popular_card_04.jpg" alt="кипр" class="popular-card_img">
+                    </picture>
+                    <h3 class="popular-card_title">Кипр</h3>
+                    <div class="popular-card-wrapper"><button
+                            class="popular-card-wrapper_btn btn btn--white btn-open-modal">Перейти</button></div>
+                </div><!-- .popular-card -->
+                <div class="popular-card">
+                    <picture>
+                        <source srcset="img/popular_card_05.jpg" media="(min-width: 414px)">
+                        <img src="img/min/popular_card_05.jpg" alt="греция" class="popular-card_img">
+                    </picture>
+                    <h3 class="popular-card_title">Греция</h3>
+                    <div class="popular-card-wrapper"><button
+                            class="popular-card-wrapper_btn btn btn--white btn-open-modal">Перейти</button></div>
+                </div><!-- .popular-card -->
+                <div class="popular-card">
+                    <picture>
+                        <source srcset="img/popular_card_06.jpg" media="(min-width: 414px)">
+                        <img src="img/min/popular_card_06.jpg" alt="турция" class="popular-card_img">
+                    </picture>
+                    <h3 class="popular-card_title">Турция</h3>
+                    <div class="popular-card-wrapper"><button
+                            class="popular-card-wrapper_btn btn btn--white btn-open-modal">Перейти</button></div>
+                </div><!-- .popular-card -->
+            </div>
+        </div>
+    </div>
+    <div class="features">
+        <div class="features_bg rellax" data-rellax-speed="-5"></div>
+        <div class="container">
+            <h2 class="features_title title"><span class="logo--gold">Почему</span> мы?</h2>
+            <p class="features_descr">С Travel ваш отдых в надежных руках.</p>
+            <div class="features-items dflex">
+                <div class="features-item">
+                    <figure class="features-item_figure"><img src="img/features_img_01.png" alt=""
+                            class="features-item_img"></figure>
+                    <p class="features-item_text">Команда профессионалов с многолетним опытом, которым вы можете
+                        доверить свой отдых.</p>
+                </div>
+                <div class="features-item">
+                    <figure class="features-item_figure"><img src="img/features_img_02.png" alt=""
+                            class="features-item_img"></figure>
+                    <p class="features-item_text">Множество акций, которые помогут сделать ваш отдых наиболее выгодным.
+                    </p>
+                </div>
+                <div class="features-item">
+                    <figure class="features-item_figure"><img src="img/features_img_03.png" alt=""
+                            class="features-item_img"></figure>
+                    <p class="features-item_text">Мы предложим качественный и интересный отдых для всех категорий</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="reviews">
+        <div class="container reviews-wrap">
+            <header class="reviews-header">
+                <h2 class="reviews_title title"><span class="logo--gold">Отзывы</span> клиентов</h2>
+                <p class="reviews_descr">Компания стремится к тому, чтобы каждый турист был доволен своим отдыхом.</p>
+            </header>
+            <div class="reviews-slider-wrapper">
+                <div class="reviews-slider slider">
+                    <div class="reviews-slider-slide slide">
+                        <div class="dflex reviews-slider-slide-wrap">
+                            <header class="reviews-slider-slide-header">
+                                <figure class="reviews-slider-slide-header_figure"><img src="img/милана.jpg" alt="woman"
+                                        class="reviews-slider-slide-header_img"></figure>
+                                <h3 class="reviews-slider-slide-header_title">Милана</h3><span
+                                    class="reviews-slider-slide-header_subtitle">Москва, Россия</span> <span
+                                    class="reviews-slider-slide-header_date">10 июля 2019 г.</span>
+                            </header>
+                            <div class="reviews-slider-slide-text">
+                                <h3 class="reviews-slider-slide-text_title">Анталия, Турция</h3>
+                                <div class="reviews-slider-slide-text-wrap"><img src="img/stars.png" alt="stars"
+                                        class="stars reviews-slider-slide-text-wrap_stars"> <span
+                                        class="reviews-slider-slide-text-wrap_num">5.0</span></div>
+                                <p class="reviews-slider-slide-text_descr">Добрый день. Последние 2 года путешествую, в
+                                    основном, только через Травелату. Менеджеры всегда на связи, это радует. Быстрый
+                                    подбор туров на сайте и в моб.приложении. Пока все радует!...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews-slider-slide slide">
+                        <div class="dflex reviews-slider-slide-wrap">
+                            <header class="reviews-slider-slide-header">
+                                <figure class="reviews-slider-slide-header_figure"><img src="img/евгения.jpg"
+                                        alt="woman" class="reviews-slider-slide-header_img"></figure>
+                                <h3 class="reviews-slider-slide-header_title">Евгения</h3><span
+                                    class="reviews-slider-slide-header_subtitle">Уфа, Россия</span> <span
+                                    class="reviews-slider-slide-header_date">17 августа 2019 г.</span>
+                            </header>
+                            <div class="reviews-slider-slide-text">
+                                <h3 class="reviews-slider-slide-text_title">Пхукет, Тайланд</h3>
+                                <div class="reviews-slider-slide-text-wrap"><img src="img/stars.png" alt="stars"
+                                        class="stars reviews-slider-slide-text-wrap_stars"> <span
+                                        class="reviews-slider-slide-text-wrap_num">5.0</span></div>
+                                <p class="reviews-slider-slide-text_descr">Все очень четко организовано,никаких накладок
+                                    ни с документами, ни с перелетом, ни с трансфером, ни с отелем. Спасибо!...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews-slider-slide slide">
+                        <div class="dflex reviews-slider-slide-wrap">
+                            <header class="reviews-slider-slide-header">
+                                <figure class="reviews-slider-slide-header_figure"><img src="img/егор.jpg" alt="woman"
+                                        class="reviews-slider-slide-header_img"></figure>
+                                <h3 class="reviews-slider-slide-header_title">Егор</h3><span
+                                    class="reviews-slider-slide-header_subtitle">Липецк, Россия</span> <span
+                                    class="reviews-slider-slide-header_date">13 июля 2020 г.</span>
+                            </header>
+                            <div class="reviews-slider-slide-text">
+                                <h3 class="reviews-slider-slide-text_title">Гавана, Куба</h3>
+                                <div class="reviews-slider-slide-text-wrap"><img src="img/stars.png" alt="stars"
+                                        class="stars reviews-slider-slide-text-wrap_stars"> <span
+                                        class="reviews-slider-slide-text-wrap_num">5.0</span></div>
+                                <p class="reviews-slider-slide-text_descr">Хочу выразить огромную благодарность
+                                    турагенству "Travel", очень профессионально и качественно подобрали нам тур на Кубу.
+                                    Все наши пожелания были учтены!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form">
+        <div class="container">
+            <div class="dflex form-wrap">
+                <div class="banner">
+                    <picture>
+                        <source srcset="img/banner.jpg" media="(min-width: 414px)">
+                        <img src="img/min/banner.jpg" alt="man" class="banner_img">
+                    </picture>
+                    <span class="banner_sale">Акция</span>
+                    <div class="banner-text">
+                        <h3 class="banner-text_title">“Бонусы без границ”</h3>
+                        <p class="banner-text_descr">До 10 000 супер-бонусов</p><button
+                            class="btn btn--white banner-text_btn btn-open-modal">Перейти</button>
+                    </div>
+                </div>
+                <div class="inputs">
+                    <h2 class="title inputs_title"><span class="logo--gold">Вам</span> подобрать тур?</h2>
+                    <p class="inputs_descr">Оператор свяжется с вами в течении 15 минут</p><input type="text"
+                        class="inputs_input input" placeholder="Имя"> <input type="tel" class="inputs_input input"
+                        placeholder="Телефон"> <input type="email" class="inputs_input input"
+                        placeholder="Электронная почта"> <button class="btn inputs_btn">Отправить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer_bg"></div>
+        <div class="container">
+            <div class="dflex footer-wrap">
+                <div class="footer-logo">
+                    <div class="logo"><span class="logo--gold">tra</span>vel</div>
+                    <p class="copyright">© 2020 Travel</p>
+                </div>
+                <div class="footer-socials">
+                    <div class="footer-socials-item"><img src="img/instagram.png" alt="logo"
+                            class="footer-socials-item_img"> <span class="footer-socials-item_name">Instagram</span>
+                    </div>
+                    <div class="footer-socials-item"><img src="img/facebook.png" alt="logo"
+                            class="footer-socials-item_img"> <span class="footer-socials-item_name">Facebook</span>
+                    </div>
+                    <div class="footer-socials-item"><img src="img/twitter.png" alt="logo"
+                            class="footer-socials-item_img"> <span class="footer-socials-item_name">Twitter</span></div>
+                </div>
+                <div class="footer-contacts">
+                    <div class="footer-contacts-item"><img src="img/phone.png" alt="logo"
+                            class="footer-contacts-item_img"> <span
+                            class="footer-contacts-item_name">8(499)555-10-10</span></div>
+                    <div class="footer-contacts-item"><img src="img/address.png" alt="logo"
+                            class="footer-contacts-item_img"> <span class="footer-contacts-item_name">Москва, Бауманская
+                            10/8</span></div>
+                    <div class="footer-contacts-item"><img src="img/mail.png" alt="logo"
+                            class="footer-contacts-item_img"> <span
+                            class="footer-contacts-item_name">info@travel.com</span></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

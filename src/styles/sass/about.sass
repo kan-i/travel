@@ -1,0 +1,58 @@
+@import vars
+
+.about
+    position: relative
+    margin-top: $mtsection
+    &_bg
+        position: absolute
+        width: 100%
+        // top: -25%
+        top: 33%
+        left: 0
+        right: 0
+        z-index: -1
+        height: 1257px
+        background-image: url(/img/egypt.png)
+        background-size: cover
+        background-position: center center
+        &_bg
+    &_img
+        width: 597px
+        height: 555px
+        border-radius: 15px
+        opacity: 0.77
+        img
+            border-radius: 15px
+    &-text
+        max-width: 503px
+        &_descr
+            &--top
+                margin-bottom: 10px
+
+@media ( max-width: 768px )
+    .about
+        &-wrap
+            position: relative
+            flex-direction: column
+        &_img
+            width: 100%
+            margin-bottom: 30px
+        &-text
+            max-width: none
+            width: 100%
+            &_title
+                position: absolute
+                top: -80px
+                left: 0
+
+@media ( max-width: 414px )
+    .about
+        margin-top: 170px
+    
+        &-text
+            max-height: 305px
+            overflow-y: hidden         
+            &_title                    
+                top: -63px
+        &_img
+            height: 231px

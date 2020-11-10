@@ -1,0 +1,58 @@
+@import vars
+.features
+    position: relative
+    text-align: center
+    margin-top: 110px
+    &_bg
+        position: absolute
+        width: 100%
+        left: 0
+        right: 0
+        // top: -110%
+        top: -400%
+        z-index: -1
+        height: 1192px
+        background-image: url(/img/features_bg.png)
+        background-size: cover
+        background-position: center center  
+    &_descr
+        margin-bottom: 69px
+    &-item
+        &_figure
+            height: 105px
+            margin-bottom: 37px
+        &_img
+            width: auto
+        &_text
+            max-width: 305px
+
+@media ( max-width: 768px )
+    .features
+        &_bg
+            top: -401%
+        &-item
+            &_figure
+                height: 81px
+            &_text
+                font-size: 16px
+                max-width: 200px
+
+@media ( max-width: 414px )
+    .features
+        margin-top: 100px
+        &_bg
+            top: -150%
+        &-items
+            flex-wrap: wrap
+            &.dflex
+                justify-content: center
+        &_descr
+            margin-bottom: 54px
+        &-item
+            &_figure
+                margin-bottom: 25px
+            &_text
+                max-width: 276px
+            &:not(:last-child)
+                margin-bottom: 48px
+                    

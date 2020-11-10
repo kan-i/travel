@@ -1,0 +1,60 @@
+.menu-btn
+    display: none
+    width: 46px
+    height: 33px
+    position: relative
+    transform: rotate(0deg)
+    transition: .5s ease-in-out
+    cursor: pointer
+    span
+        display: block
+        position: absolute
+        height: 4px
+        width: 100%
+        background: #ffffff
+        border-radius: 9px
+        opacity: 1
+        left: 0
+        transform: rotate(0deg)
+        transition: .25s ease-in-out
+        &:nth-child(1)
+            top: 0px
+        &:nth-child(2) 
+            top: 13px
+            width: 73%
+            transform: translateX(38%)
+        &:nth-child(3) 
+            top: 26px
+
+
+    &.open 
+        span:nth-child(1) 
+            top: 13px
+            transform: rotate(135deg)
+        span:nth-child(2) 
+            opacity: 0
+            left: -60px
+        span:nth-child(3) 
+            top: 13px
+            transform: rotate(-135deg)
+
+
+@media (max-width: 768px)
+    .menu-btn
+        display: block
+
+@media (max-width: 414px)
+    .menu-btn
+        width: 34px
+        height: 28px
+        span
+            height: 3px
+            &:nth-child(2) 
+                top: 11px
+            &:nth-child(3) 
+                top: 22px
+        &.open 
+            span:nth-child(1) 
+                top: 11px
+            span:nth-child(3) 
+                top: 11px

@@ -1,0 +1,92 @@
+@import vars
+.reviews
+    margin-top: $mtsection
+    overflow-x: hidden
+    &-wrap
+        position: relative
+    &_descr
+        max-width: 590px
+        margin-bottom: 40px
+    &-slider
+        overflow-x: hidden
+        width: 1596px
+        &-slide
+            margin-right: 56px
+            max-width: 770px
+            padding: 55px
+            border-radius: 15px
+            background: rgba(255, 255, 255, 0.5)
+            &-header
+                flex-basis: 30%
+                text-align: center
+                &_figure
+                    margin: 0 auto 20px auto
+                    width: 127px
+                    height: 127px
+                    border-radius: 150px
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+                &_img
+                    border-radius: 150px
+                &_title
+                    font-weight: bold
+                &_date
+                    font-weight: 300
+                    display: block
+
+
+            &-text
+                flex-basis: 60%
+                &-wrap
+                    position: relative
+                    max-width: 177px
+                    &_stars
+                        width: 139px
+                        margin-bottom: 12px
+                    &_num
+                        position: absolute
+                        top: 0
+                        right: 0
+                &_title
+                    font-weight: bold
+                    margin-bottom: 9px
+                &_descr
+                    max-width: 370px
+
+@media ( max-width: 768px )
+    .reviews
+        &-slider
+            width: 1290px
+            &-slide
+                margin-right: 30px
+                max-width: 630px
+                padding: 55px
+                &-text
+                    &_descr
+                        max-width: 345px
+                        height: 135px
+                        overflow: hidden
+
+
+@media ( max-width: 414px )
+    .reviews
+        height: 735px
+        margin-top: 100px
+        &-slider
+            width: 550px
+            &-slide 
+                margin-right: 18px
+                width: 256px
+                padding: 30px
+                &-wrap
+                    flex-direction: column
+                &-header
+                    flex-basis: 100%
+                    width: 100%
+                    margin-bottom: 32px
+                &-text
+                    flex-basis: 100%
+                    &_descr
+                        height: 115px
+                    &-wrap
+                        &_stars
+                            margin-bottom: 6px

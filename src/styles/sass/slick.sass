@@ -1,0 +1,88 @@
+@import vars
+.slick-initialized.slick-slider
+    .slick-list.draggable
+        padding-top: 16px
+        padding-bottom: 16px
+
+.slider
+    &-btn
+        position: absolute
+        width: 40px
+        height: 40px
+        border: 1px solid $gold
+        border-radius: 50px
+        background: none
+        text-align: center
+        top: 0
+        right: 0
+        cursor: pointer
+        overflow: hidden
+        transition: .7s ease
+        &::before
+            content: ""
+            border-radius: 50px
+            width: 100%
+            height: 100%
+            position: absolute
+            top: 0
+            left: -100%
+            z-index: -1
+            background-color: $gold
+            transition: .35s ease-in-out
+            box-sizing: border-box
+        &:hover
+            color: $gold
+            border: 1px solid transparent
+            &::before
+                left: 0
+            svg
+                path
+                    stroke: #fff
+        svg
+            position: absolute
+            top: 50%
+            margin-top: -7.5px
+            left: 50%
+            margin-left: -3.5px
+            path
+                stroke: $gold
+                transition: .35s ease-in-out
+
+.slide
+    display: inline-block
+
+
+.hot-tours-slider.slider.slick-initialized.slick-slider
+    .slider-btn.slick-arrow
+        top: 61px
+        margin-top: -20px
+    .slider-btn.slider-btn--prev.slick-arrow
+        right: 64px
+
+.reviews-slider.slider.slick-initialized.slick-slider
+    .slider-btn.slick-arrow
+        top: 61px
+        margin-top: -20px
+    .slider-btn.slider-btn--prev.slick-arrow
+        right: 64px
+
+        
+@media ( max-width: 414px )
+    .hot-tours-slider.slider.slick-initialized.slick-slider
+        .slider-btn.slick-arrow
+            top: auto
+            bottom: -47px
+            left: 0
+        .slider-btn.slider-btn--next.slick-arrow
+            left: 64px
+
+    .reviews-slider.slider.slick-initialized.slick-slider
+        .slider-btn.slick-arrow
+            top: auto
+            bottom: -47px
+            left: 0
+        .slider-btn.slider-btn--next.slick-arrow
+            left: 64px
+        .slider-btn.slider-btn--left.slick-arrow
+            left: 0
+   
